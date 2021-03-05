@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+img {
+  width: 30vw;
+  height: 80vh;
+  object-fit: cover;
+}
+
+.img-container-before,
+.img-container-after {
+  position: absolute;
+  width: 30vw;
+  height: 80vh;
+}
+.img-container-before {
+  width: 15vw;
+  overflow: hidden;
+}
+.container {
+  position: relative;
+  width: 30vw;
+  height: 80vh;
+}
+
+.slider {
+  width: 0.5rem;
+  height: 100%;
+  background: white;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  pointer-events: none;
+}
